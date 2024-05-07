@@ -34,15 +34,16 @@ const Home: React.FC = () => {
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <IonTitle>Blank</IonTitle>
+          <IonTitle>Mini Q</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>
         <IonHeader collapse="condense">
           <IonToolbar>
-            <IonTitle size="large">Blank</IonTitle>
+            <IonTitle size="large">Mini Q</IonTitle>
           </IonToolbar>
         </IonHeader>
+        
         <ExploreContainer />
 
         <IonFab slot="fixed" vertical="bottom" horizontal="center">
