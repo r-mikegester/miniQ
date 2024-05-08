@@ -33,6 +33,7 @@ import '@ionic/react/css/palettes/dark.system.css';
 
 /* Theme variables */
 import './theme/variables.css';
+import WelcomeComponent from './components/WelcomeComponent';
 
 setupIonicReact();
 
@@ -46,6 +47,7 @@ const App: React.FC = () => (
         <Route exact path="/">
           <Redirect to="/home" />
         </Route>
+        <Route path="/WelcomeComponent/:qrValue" exact component={WelcomeComponent} />
       </IonRouterOutlet>
     </IonReactRouter>
   </IonApp>
