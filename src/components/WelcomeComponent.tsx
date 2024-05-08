@@ -5,7 +5,7 @@ import roomData from "./roomData"; // Assuming roomData is exported from another
 
 interface RoomDetails {
   image: string;
-  floorLevel: number;
+  floorLevel: string;
   buildingName: string;
   // Add more properties as needed
 }
@@ -35,14 +35,21 @@ const WelcomeComponent = () => {
     // Filter destinationData based on searchQuery
     if (destinationData) {
       const filtered = Object.keys(destinationData)
-        .filter((key) => key.toLowerCase().includes(searchQuery.toLowerCase()))
+        .filter((key) => {
+          const roomDetails = destinationData[key];
+          // Check if destination or building name includes the search query
+          return (
+            key.toLowerCase().includes(searchQuery.toLowerCase()) ||
+            roomDetails.buildingName.toLowerCase().includes(searchQuery.toLowerCase())
+          );
+        })
         .reduce<{ [key: string]: RoomDetails }>((obj, key) => {
           obj[key] = destinationData[key];
           return obj;
         }, {});
       setFilteredData(filtered);
     }
-  }, [searchQuery, destinationData]);
+  }, [searchQuery, destinationData]);  
 
   const handleSearchChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setSearchQuery(event.target.value);
@@ -59,11 +66,11 @@ const WelcomeComponent = () => {
   return (
     <IonPage>
       <IonContent>
-        <h1>Your current location: {qrValue}</h1>
+        <h1 className="text-center">Your current location: {qrValue}</h1>
         <br />
-        <p>Where do you want to go?</p>
+        <p className="m-3">Where do you want to go?</p>
         <input
-          className="border-white bg-white text-black"
+          className="border-white bg-white text-black m-3 p-2"
           value={searchQuery}
           onChange={handleSearchChange}
           placeholder="Search destination"
@@ -77,13 +84,13 @@ const WelcomeComponent = () => {
           filteredData &&
           Object.keys(filteredData).length > 0 && (
             <div>
-              {Object.entries(filteredData).map(([destination, details]) => (
+              {Object.entries(filteredData).sort().map(([destination, details]) => (
                 <div key={destination}>
                   <button
                     onClick={() => handleDestinationClick(destination)}
-                    className="btn"
+                    className="btn m-3"
                   >
-                    <h3>Destination: {destination}</h3>
+                    {destination} - floor: {details.floorLevel} - {details.buildingName}
                   </button>
                   <IonModal isOpen={selectedDestination === destination}>
                     <IonContent>
@@ -99,9 +106,7 @@ const WelcomeComponent = () => {
                       > BACK TO HOME to SCAN AGAIN </IonButton>
                     </IonContent>
                   </IonModal>
-                  <p>Floor Level: {details.floorLevel}</p>
-                  <p>Building Name: {details.buildingName}</p>
-                  {/* Assuming there are other details to display */}
+                
                 </div>
               ))}
             </div>
@@ -111,7 +116,7 @@ const WelcomeComponent = () => {
           onClick={() => {
             history.push("/home");
           }}
-          className="btn"
+          className="m-3 btn"
         >
           BACK TO HOME to SCAN AGAIN
         </button>
