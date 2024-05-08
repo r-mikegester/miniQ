@@ -6,9 +6,10 @@ import roomData from "./roomData"; // Assuming roomData is exported from another
 import Home from "../pages/Home";
 
 interface RoomDetails {
-    image: string;
-    floorLevel: number;
-    // Add more properties as needed
+  image: string;
+  floorLevel: string;
+  buildingName: string;
+  // Add more properties as needed
 }
 
 const WelcomeComponent = () => {
@@ -27,12 +28,25 @@ const WelcomeComponent = () => {
         null
     );
 
-    useEffect(() => {
-        // Filter roomData based on qrValue
-        const filteredData = roomData[qrValue];
-        setDestinationData(filteredData);
-        setFilteredData(filteredData); // Initialize filteredData with destinationData
-    }, [qrValue]);
+  useEffect(() => {
+    // Filter destinationData based on searchQuery
+    if (destinationData) {
+      const filtered = Object.keys(destinationData)
+        .filter((key) => {
+          const roomDetails = destinationData[key];
+          // Check if destination or building name includes the search query
+          return (
+            key.toLowerCase().includes(searchQuery.toLowerCase()) ||
+            roomDetails.buildingName.toLowerCase().includes(searchQuery.toLowerCase())
+          );
+        })
+        .reduce<{ [key: string]: RoomDetails }>((obj, key) => {
+          obj[key] = destinationData[key];
+          return obj;
+        }, {});
+      setFilteredData(filtered);
+    }
+  }, [searchQuery, destinationData]);  
 
     useEffect(() => {
         // Filter destinationData based on searchQuery
