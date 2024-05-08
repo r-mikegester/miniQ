@@ -136,15 +136,18 @@ const roomData = {
     Registrar: {
         Library: {
             image: RegistrarToLibrary,
-            floorLevel: 2
+            floorLevel: 2,
+            buildingName: "Academic"
         },
         Admin: {
             image: itachi,
-            floorLevel: 2
+            floorLevel: 2,
+            buildingName: "Registrar"
         },
         CCS: {
             image: naruto,
-            floorLevel: 6
+            floorLevel: 6,
+            buildingName: "Bautista"
         },
     }
 };

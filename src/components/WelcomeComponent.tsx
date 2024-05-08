@@ -6,6 +6,7 @@ import roomData from "./roomData"; // Assuming roomData is exported from another
 interface RoomDetails {
   image: string;
   floorLevel: number;
+  buildingName: string;
   // Add more properties as needed
 }
 
@@ -98,7 +99,8 @@ const WelcomeComponent = () => {
                       > BACK TO HOME to SCAN AGAIN </IonButton>
                     </IonContent>
                   </IonModal>
-                  <h2>Floor Level: {details.floorLevel}</h2>
+                  <p>Floor Level: {details.floorLevel}</p>
+                  <p>Building Name: {details.buildingName}</p>
                   {/* Assuming there are other details to display */}
                 </div>
               ))}
