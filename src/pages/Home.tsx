@@ -66,10 +66,10 @@ const Home: React.FC = () => {
         </div>
 
 
-        <IonModal ref={modal} trigger="open-modal" initialBreakpoint={0.70} breakpoints={[0, 0.70]}  handleBehavior="cycle">
+        <IonModal ref={modal} trigger="open-modal" initialBreakpoint={1} breakpoints={[0, 0.70, 1]}  handleBehavior="cycle">
           <IonFooter>
             <IonToolbar className="">
-              <IonButtons slot="start">
+              <IonButtons slot="end">
                 <IonButton onClick={() => modal.current?.dismiss()}>
                   Cancel
                 </IonButton>
