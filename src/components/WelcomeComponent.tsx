@@ -85,7 +85,7 @@ const WelcomeComponent = () => {
             </IonFooter>
             <IonContent>
 
-                <div id="container" className="z-40 flex items-center justify-center w-full h-[900px]">
+                <div id="container" className="z-40 flex items-center justify-center w-full h-full">
                     <div className="flex flex-col justify-between w-full h-full p-6 bg-base-300 text-base-content">
                         <div className="flex flex-col items-center justify-center">
                             <h1 className='text-xl'>Your Current Location:</h1>
