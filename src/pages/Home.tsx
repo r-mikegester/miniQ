@@ -47,12 +47,12 @@ const Home: React.FC = () => {
           <div className="flex flex-col justify-between w-full h-full p-6 text-base-content">
             <div>
               <h1 className='text-xl text-center'>WELCOME TO</h1>
-              <h1 className="-mt-2 font-bold text-center text-9xl">NAVI Q</h1>
+              <h1 className="-mt-2 font-bold text-center text-8xl">NAVI Q</h1>
             </div>
 
             <div className="mb-1">
               <div className="flex flex-col items-center justify-center">
-                <h1 className='text-xl'>USE THE QR CODE SCANNER TO NAVIGATE</h1>
+                <h1 className='text-xl text-center'>USE THE QR CODE SCANNER TO NAVIGATE</h1>
                 <Icon icon="icon-park-outline:down" className="w-10 h-10 mt-5 animate-bounce" />
               </div>
               <IonFab slot="fixed" vertical="bottom" horizontal="center" className="mb-10">
