@@ -66,7 +66,7 @@ const Home: React.FC = () => {
         </div>
 
 
-        <IonModal ref={modal} trigger="open-modal" initialBreakpoint={0.75} breakpoints={[0, 0.75]}  handleBehavior="cycle">
+        <IonModal ref={modal} trigger="open-modal" initialBreakpoint={0.75} breakpoints={[0, 0.75]} className="h-full qrmodal" handleBehavior="cycle">
           <IonHeader>
             <IonToolbar className="">
               <IonButtons slot="end">
@@ -74,7 +74,7 @@ const Home: React.FC = () => {
                   Cancel
                 </IonButton>
               </IonButtons>
-              {/* <IonTitle>QR CODE SCANNER</IonTitle> */}
+              <IonTitle>QRCODE SCANNER</IonTitle>
             </IonToolbar>
           </IonHeader>
           <IonContent className="ion-padding">
