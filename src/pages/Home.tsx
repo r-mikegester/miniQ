@@ -14,7 +14,7 @@ import {
   IonToolbar,
   IonFooter,
 } from "@ionic/react";
-import { add } from "ionicons/icons";
+import { add, qrCodeOutline } from "ionicons/icons";
 import ExploreContainer from "../components/ExploreContainer";
 import "./Home.css";
 import { useRef, useState } from "react";
@@ -55,9 +55,9 @@ const Home: React.FC = () => {
                 <h1 className='text-xl text-center'>USE THE QR CODE SCANNER TO NAVIGATE</h1>
                 <Icon icon="icon-park-outline:down" className="w-10 h-10 mt-5 animate-bounce" />
               </div>
-              <IonFab slot="fixed" vertical="bottom" horizontal="center" className="mb-10">
+              <IonFab slot="fixed" vertical="bottom" horizontal="center"  className="mb-10">
                 <IonFabButton id="open-modal">
-                  <IonIcon icon={add}></IonIcon>
+                  <IonIcon icon={qrCodeOutline}></IonIcon>
                 </IonFabButton>
               </IonFab>
 
@@ -66,7 +66,7 @@ const Home: React.FC = () => {
         </div>
 
 
-        <IonModal ref={modal} trigger="open-modal" initialBreakpoint={1} breakpoints={[0, 0.70, 1]}  handleBehavior="cycle">
+        <IonModal ref={modal} trigger="open-modal" initialBreakpoint={1} breakpoints={[0, 1]}  handleBehavior="cycle">
           <IonFooter>
             <IonToolbar className="">
               <IonButtons slot="end">
