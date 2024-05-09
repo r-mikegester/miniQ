@@ -68,7 +68,7 @@ const Home: React.FC = () => {
 
         <IonModal ref={modal} trigger="open-modal" initialBreakpoint={0.70} breakpoints={[0, 0.70]}  handleBehavior="cycle">
           <IonFooter>
-            <IonToolbar className="mb-[280px]">
+            <IonToolbar className="">
               <IonButtons slot="start">
                 <IonButton onClick={() => modal.current?.dismiss()}>
                   Cancel
