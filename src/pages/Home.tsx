@@ -66,7 +66,7 @@ const Home: React.FC = () => {
         </div>
 
 
-        <IonModal ref={modal} trigger="open-modal" initialBreakpoint={1} breakpoints={[0, 1]}  handleBehavior="cycle">
+        <IonModal ref={modal} trigger="open-modal" initialBreakpoint={1} breakpoints={[0, 0.25, 0.50, 0.75, 1]}  handleBehavior="cycle">
           <IonFooter>
             <IonToolbar className="">
               <IonButtons slot="end">
