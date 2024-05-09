@@ -92,7 +92,7 @@ const QrReader: React.FC<QrReaderProps> = ({ closeModal }) => {
     return (
         <div className="qr-reader">
             {/* QR */}
-            <video ref={videoEl} width="200px" height="200px"></video>
+            <video ref={videoEl}></video>
             <div ref={qrBoxEl} className="qr-box">
                 <img
                     src={QrFrame}
