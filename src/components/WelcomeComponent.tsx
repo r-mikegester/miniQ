@@ -2,7 +2,6 @@ import React, { useState, useEffect, useRef } from "react";
 import { IonContent, IonPage, IonModal, IonButton, IonSearchbar, IonBackButton, IonButtons, IonTitle, IonToolbar, IonIcon, IonNavLink, IonHeader, IonFooter } from "@ionic/react";
 import { chevronBackOutline, qrCodeOutline, searchOutline } from "ionicons/icons";
 import { useHistory, useParams } from "react-router";
-import roomData from "./roomData";
 
 interface RoomDetails {
     image: string;
@@ -10,28 +9,39 @@ interface RoomDetails {
     buildingName: string;
 }
 
+type DestinationData = {
+  [key: string]: RoomDetails;
+};
+
+// Define the type for filteredData
+type FilteredData = {
+  [key: string]: RoomDetails;
+};
+
+
 const WelcomeComponent = () => {
     const modal = useRef<HTMLIonModalElement>(null);
     const [isOpen, setIsOpen] = useState(false);
 
     const history = useHistory();
-    const { qrValue } = useParams<{ qrValue: keyof typeof roomData }>();
-    const [destinationData, setDestinationData] = useState<{
-        [key: string]: RoomDetails;
-    } | null>(null);
-    const [filteredData, setFilteredData] = useState<{
-        [key: string]: RoomDetails;
-    } | null>(null);
+    const { qrValue } = useParams<{ qrValue?: string | undefined }>();
+    const [destinationData, setDestinationData] = useState<DestinationData | null>(null);
+    const [filteredData, setFilteredData] = useState<FilteredData | null>(null);
     const [searchQuery, setSearchQuery] = useState<string>("");
     const [selectedDestination, setSelectedDestination] = useState<string | null>(
         null
     );
 
     useEffect(() => {
-        const filteredData = roomData[qrValue];
-        setDestinationData(filteredData);
-        setFilteredData(filteredData);
-    }, [qrValue]);
+      const fetchRoomData = async () => {
+          // Dynamically import roomData based on qrValue
+          const roomDataModule = await import(`../data/${qrValue}`);
+          console.log(roomDataModule.default);
+          setDestinationData(roomDataModule.default);
+          setFilteredData(roomDataModule.default);
+      };
+      fetchRoomData();
+  }, [qrValue]);
 
     useEffect(() => {
         if (destinationData) {
@@ -261,4 +271,4 @@ const WelcomeComponent = () => {
     );
 };
 
-                    export default WelcomeComponent;
+export default WelcomeComponent;
