@@ -1,13 +1,13 @@
 import React, { useState, useEffect, useRef } from "react";
 import { IonContent, IonPage, IonModal, IonButton, IonSearchbar, IonBackButton, IonButtons, IonTitle, IonToolbar, IonIcon, IonNavLink, IonHeader, IonFooter } from "@ionic/react";
-import { chevronBackOutline, qrCodeOutline } from "ionicons/icons";
+import { chevronBackOutline, qrCodeOutline, searchOutline } from "ionicons/icons";
 import { useHistory, useParams } from "react-router";
 import roomData from "./roomData";
 
 interface RoomDetails {
-  image: string;
-  floorLevel: string;
-  buildingName: string;
+    image: string;
+    floorLevel: string;
+    buildingName: string;
 }
 
 const WelcomeComponent = () => {
@@ -69,25 +69,108 @@ const WelcomeComponent = () => {
 
     const handleBack = () => {
         history.push('/home');
-      };
+    };
 
-      
+
     return (
         <IonPage>
             <IonFooter>
                 <IonToolbar>
                     <IonButtons slot="start">
-                        <IonButton onClick={handleBack}><IonIcon slot="icon-only" icon={chevronBackOutline} />Back</IonButton>
+                        <IonButton className="" onClick={handleBack}><IonIcon className="text-white" slot="icon-only" icon={chevronBackOutline} /><div className="text-white">
+                        Back</div></IonButton>
                     </IonButtons>
                     <IonTitle></IonTitle>
                 </IonToolbar>
             </IonFooter>
             <IonContent>
                 <div id="container" className="z-40 flex items-center justify-center w-full h-full">
-                    <div className="flex flex-col justify-between w-full h-full p-6 bg-base-300 text-base-content">
-                        <div className="flex flex-col items-center justify-center">
-                            <h1 className='text-xl'>Your Current Location:</h1>
-                            <h1 className="-mt-2 text-6xl font-bold text-center w-96 rounded-2xl">{qrValue}</h1>
+                    <div className="flex flex-col justify-between w-full h-full bg-base-300 text-base-content">
+                        <div className="m-6 bg-base-100 rounded-3xl">
+                            <div className="flex flex-col items-center justify-center">
+                                <h1 className='text-xl'>Your Current Location:</h1>
+                                <h1 className="-mt-2 text-6xl font-bold text-center w-96 rounded-2xl">{qrValue}</h1>
+                            </div>
+
+                        </div>
+                        <div className="bg-base-200 rounded-t-3xl">
+                            <div className="px-6 ">
+                                <h1 className="text-lg text-center ">Where do you want to go?</h1>
+                                <label className="flex items-center h-16 gap-2 input rounded-2xl input-bordered">
+                                    <IonIcon slot="icon-only" className="w-10 h-10 text-white" icon={searchOutline}></IonIcon>
+                                    <input type="text" value={searchQuery}
+                                        onChange={handleSearchChange} className="w-full grow text-base-content h-14 bg-base-100 rounded-2xl" placeholder="search your destination here..." />
+
+                                </label>
+                            </div>
+                            <h1 className="text-center">Search Results:</h1>
+                            <div className="flex flex-col p-3 overflow-y-scroll bg-base-100 rounded-t-3xl h-[500px]">
+
+
+                                <div>
+                                    {searchQuery &&
+                                        filteredData &&
+                                        Object.keys(filteredData).length === 0 && <div className="container flex flex-col items-center justify-center px-5 mx-auto my-8 space-y-8 text-center sm:max-w-md">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" className="w-40 h-40 dark:text-gray-400">
+                                            <path fill="currentColor" d="M256,16C123.452,16,16,123.452,16,256S123.452,496,256,496,496,388.548,496,256,388.548,16,256,16ZM403.078,403.078a207.253,207.253,0,1,1,44.589-66.125A207.332,207.332,0,0,1,403.078,403.078Z"></path>
+                                            <rect width="176" height="32" x="168" y="320" fill="currentColor"></rect>
+                                            <polygon fill="currentColor" points="210.63 228.042 186.588 206.671 207.958 182.63 184.042 161.37 162.671 185.412 138.63 164.042 117.37 187.958 141.412 209.329 120.042 233.37 143.958 254.63 165.329 230.588 189.37 251.958 210.63 228.042"></polygon>
+                                            <polygon fill="currentColor" points="383.958 182.63 360.042 161.37 338.671 185.412 314.63 164.042 293.37 187.958 317.412 209.329 296.042 233.37 319.958 254.63 341.329 230.588 365.37 251.958 386.63 228.042 362.588 206.671 383.958 182.63"></polygon>
+                                        </svg>
+                                        <p className="text-3xl">Looks like we didn't find your query, try again.</p>
+                                        
+                                    </div>}
+                                    {searchQuery &&
+                                        filteredData &&
+                                        Object.keys(filteredData).length > 0 && (
+                                            <div className="space-y-3">
+                                                {Object.entries(filteredData).map(([destination, details]) => (
+                                                    <div key={destination}>
+                                                        <button
+                                                            onClick={() => handleDestinationClick(destination)}
+                                                            className="h-full py-3 bg-base-300 rounded-2xl btn-block btn"
+                                                        >
+                                                            <div className="flex justify-between w-full h-auto space-x-3">
+                                                                <div className="text-lg font-semibold text-left uppercase truncate w-72 text-wrap text-ellipsis">{destination}</div>
+                                                                <div className="flex flex-col items-end space-y-2 text-right">
+                                                                    <div> floor: {details.floorLevel}</div>
+                                                                    <div className="badge badge-lg bg-emerald-500 text-base-300">{details.buildingName}</div>
+                                                                </div>
+                                                            </div>
+                                                        </button>
+                                                        <IonModal isOpen={selectedDestination === destination} mode="ios">
+                                                            <IonFooter>
+                                                                <IonToolbar mode="ios">
+                                                                    <IonButtons slot="secondary">
+                                                                        <IonButton onClick={handleCloseModal}>
+                                                                            <IonIcon slot="icon-only" className="text-white" icon={chevronBackOutline}></IonIcon>
+                                                                        </IonButton>
+                                                                    </IonButtons>
+                                                                    <IonButtons slot="primary">
+                                                                        <IonButton
+                                                                            onClick={() => {
+                                                                                handleCloseModal();
+                                                                                history.push("/home");
+                                                                                setIsOpen(false);
+                                                                                setSearchQuery("");
+                                                                            }}
+                                                                        >
+                                                                            <IonIcon slot="icon-only" className="text-white" icon={qrCodeOutline}></IonIcon>
+                                                                        </IonButton>
+                                                                    </IonButtons>
+                                                                    <IonTitle></IonTitle>
+                                                                </IonToolbar>
+                                                            </IonFooter>
+                                                            <IonContent>
+                                                                <img src={details.image} alt={destination} className="h-full" />
+                                                            </IonContent>
+                                                        </IonModal>
+                                                    </div>
+                                                ))}
+                                            </div>
+                                        )}
+                                </div>
+                            </div>
                         </div>
                         <IonModal
                             ref={modal}
@@ -130,7 +213,7 @@ const WelcomeComponent = () => {
                                                         <div key={destination}>
                                                             <button
                                                                 onClick={() => handleDestinationClick(destination)}
-                                                                className="flex items-center justify-center btn-block btn mb-3 h-auto"
+                                                                className="flex items-center justify-center h-auto mb-3 btn-block btn"
                                                             >
                                                                 <h3 className="font-semibold uppercase">{destination} - floor: {details.floorLevel} - {details.buildingName}</h3>
                                                             </button>
@@ -170,17 +253,6 @@ const WelcomeComponent = () => {
                             </IonContent>
                         </IonModal>
                         <div>
-                            <h1 className="text-center">Where do you want to go?</h1>
-                            <div>
-                                <IonButton
-                                    id="open-modal"
-                                    expand="block"
-                                    className="z-50 w-full rounded-3xl searchBtn"
-                                    onClick={() => setIsOpen(true)}
-                                >
-                                    Search Your Destination
-                                </IonButton>
-                            </div>
                         </div>
                     </div>
                 </div>
