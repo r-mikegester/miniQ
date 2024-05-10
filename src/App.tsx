@@ -47,7 +47,7 @@ const App: React.FC = () => (
         <Route exact path="/">
           <Redirect to="/home" />
         </Route>
-        <Route path="/WelcomeComponent/:qrValue" exact component={WelcomeComponent} />
+        <Route path="/WelcomeComponent/data/:qrValue" exact component={WelcomeComponent} />
       </IonRouterOutlet>
     </IonReactRouter>
   </IonApp>
