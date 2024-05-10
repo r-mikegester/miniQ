@@ -1,6 +1,4 @@
 // LIBRARY
-import naruto from "../components/naruto.jpg"
-
 import libraryToIB101a from "../assets/Library/(LIBRARY) TO (IB101a).png"
 import libraryToIB102a from "../assets/Library/(LIBRARY) TO (IB102a).png"
 import libraryToIB103a from "../assets/Library/(LIBRARY) TO (IB103a).png"
@@ -142,7 +140,6 @@ import libraryToIA216 from "../assets/Library/(LIBRARY) TO (IA216).png"
 const Library = {
   
     // YELLOW BUILDING
-    QWERTY: {image: naruto, floorLevel: "1", buildingName: "Yellow"},
     IB101a: {image: libraryToIB101a, floorLevel: "1", buildingName: "Yellow"},
     IB102a: {image: libraryToIB102a, floorLevel: "1", buildingName: "Yellow"},
     IB103a: {image: libraryToIB103a, floorLevel: "1", buildingName: "Yellow"},

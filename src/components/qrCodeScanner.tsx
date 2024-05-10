@@ -37,7 +37,7 @@ const QrReader: React.FC<QrReaderProps> = ({ closeModal }) => {
         if (result?.data) {
             // Close the modal when a result is obtained
             closeModal();
-            history.push(`/WelcomeComponent/${result.data}`);
+            history.push(`/WelcomeComponent/data/${result.data}`);
 
         }
     };
