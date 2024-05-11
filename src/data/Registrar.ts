@@ -7,7 +7,7 @@ import RegistrarToScholarship from "../assets/Registrar/(REGISTRAR) TO (C-Schola
 import RegistrarToCanteen from "../assets/Registrar/REGISTRAR TO CANTEEN.png"
 import RegistrarToCoop from "../assets/Registrar/REGISTRAR TO COOP.png"
 import RegistrarToAccountancyDept from "../assets/Registrar/REGISTRAR TO ACCOUNTANCY.png"
-import RegistrarToChemLab from "../assetsRegistrary/REGISTRAR TO CHEM LAB.png"
+import RegistrarToChemLab from "../assetsRegistrar/REGISTRAR TO CHEM LAB.png"
 import RegistrarToPhysicsLab from "../assets/Registrar/REGISTRAR TO PHYSICS.png"
 import RegistrarToEngrOffice from "../assets/Registrar/REGISTRAR TO ENGINEERING.png"
 import RegistrarToElectronicLab from "../assets/Registrar/REGISTRAR TO ELECTRONIC.png"
