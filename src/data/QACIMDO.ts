@@ -14,7 +14,7 @@ import toLibrary from "../assets/QACIMDO/QACIMDO-library.png"
 // BAUTISTA BUILDING
 import toCanteen from "../assets/QACIMDO/QACIMDO-canteen.png"
 import toCoop from "../assets/QACIMDO/QACIMDO-coop.png"
-import toAccountancyDept from "../assets/QACIMDO/QACIMDO-accountacyDept.png"
+import toAccountancyDept from "../assets/QACIMDO/QACIMDO-accountancyDept.png"
 import toPhysicsLab from "../assets/QACIMDO/QACIMDO-physicsLab.png"
 import toChemLab from "../assets/QACIMDO/QACIMDO-chemLab.png"
 import toEngineeringLab from "../assets/QACIMDO/QACIMDO-engineeringLab.png"

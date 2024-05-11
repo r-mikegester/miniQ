@@ -14,7 +14,7 @@ import toLibrary from "../assets/ICTO-IA209/ICTO209-library.png"
 // BAUTISTA BUILDING
 import toCanteen from "../assets/ICTO-IA209/ICTO209-canteen.png"
 import toCoop from "../assets/ICTO-IA209/ICTO209-coop.png"
-import toAccountancyDept from "../assets/ICTO-IA209/ICTO209-accountacyDept.png"
+import toAccountancyDept from "../assets/ICTO-IA209/ICTO209-accountancyDept.png"
 import toPhysicsLab from "../assets/ICTO-IA209/ICTO209-physicsLab.png"
 import toChemLab from "../assets/ICTO-IA209/ICTO209-chemLab.png"
 import toEngineeringLab from "../assets/ICTO-IA209/ICTO209-engineeringLab.png"

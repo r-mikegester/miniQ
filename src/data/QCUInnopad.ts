@@ -14,7 +14,7 @@ import toLibrary from "../assets/QCUInnopad/QCUInnopad-library.png"
 // BAUTISTA BUILDING
 import toCanteen from "../assets/QCUInnopad/QCUInnopad-canteen.png"
 import toCoop from "../assets/QCUInnopad/QCUInnopad-coop.png"
-import toAccountancyDept from "../assets/QCUInnopad/QCUInnopad-accountacyDept.png"
+import toAccountancyDept from "../assets/QCUInnopad/QCUInnopad-accountancyDept.png"
 import toPhysicsLab from "../assets/QCUInnopad/QCUInnopad-physicsLab.png"
 import toChemLab from "../assets/QCUInnopad/QCUInnopad-chemLab.png"
 import toEngineeringLab from "../assets/QCUInnopad/QCUInnopad-engineeringLab.png"

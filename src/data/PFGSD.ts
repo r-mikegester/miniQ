@@ -14,7 +14,7 @@ import toLibrary from "../assets/PFGSD/PFGSD-library.png"
 // BAUTISTA BUILDING
 import toCanteen from "../assets/PFGSD/PFGSD-canteen.png"
 import toCoop from "../assets/PFGSD/PFGSD-coop.png"
-import toAccountancyDept from "../assets/PFGSD/PFGSD-accountacyDept.png"
+import toAccountancyDept from "../assets/PFGSD/PFGSD-accountancyDept.png"
 import toPhysicsLab from "../assets/PFGSD/PFGSD-physicsLab.png"
 import toChemLab from "../assets/PFGSD/PFGSD-chemLab.png"
 import toEngineeringLab from "../assets/PFGSD/PFGSD-engineeringLab.png"

@@ -14,7 +14,7 @@ import toLibrary from "../assets/SPARDS/SPARDS-library.png"
 // BAUTISTA BUILDING
 import toCanteen from "../assets/SPARDS/SPARDS-canteen.png"
 import toCoop from "../assets/SPARDS/SPARDS-coop.png"
-import toAccountancyDept from "../assets/SPARDS/SPARDS-accountacyDept.png"
+import toAccountancyDept from "../assets/SPARDS/SPARDS-accountancyDept.png"
 import toPhysicsLab from "../assets/SPARDS/SPARDS-physicsLab.png"
 import toChemLab from "../assets/SPARDS/SPARDS-chemLab.png"
 import toEngineeringLab from "../assets/SPARDS/SPARDS-engineeringLab.png"
