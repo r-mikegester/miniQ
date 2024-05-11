@@ -1,99 +1,102 @@
 
-// ADMIN BUILDING
-import libraryToLobby from "../assets/Library/(LIBRARY) TO (A-Admin Lobby).png"
-import libraryToAccounting from "../assets/Library/(LIBRARY) TO (A-Accounting Division).png"
-import libraryToAdmission from "../assets/Library/(LIBRARY) TO (A-Admission Office).png"
-import libraryToRegistrar from "../assets/Library/(LIBRARY) TO (A-Registrar Office).png"
-import libraryToHR from "../assets/Library/(LIBRARY) TO (A-HR Office).png"
+import RegistrarToAccountingChed from "../assets/Registrar/(REGISTRAR) TO (REGISTRAR TO ACCOUNTANCY).png"
+import RegistrarToCashier from "../assets/Registrar/REGISTRAR TO COOP (2).png"
+import RegistrarToExecutive from "../assets/Registrar/(REGISTRAR) TO (C-Executive Office).png"
+import RegistrarToRecords from "../assets/Registrar/(REGISTRAR) TO (C-Records Unit).png"
+import RegistrarToScholarship from "../assets/Registrar/(REGISTRAR) TO (C-Scholarship Unit).png"
+import RegistrarToCanteen from "../assets/Registrar/REGISTRAR TO CANTEEN.png"
+import RegistrarToCoop from "../assets/Registrar/REGISTRAR TO COOP.png"
+import RegistrarToAccountancyDept from "../assets/Registrar/REGISTRAR TO ACCOUNTANCY.png"
+import RegistrarToChemLab from "../assetsRegistrar/REGISTRAR TO CHEM LAB.png"
+import RegistrarToPhysicsLab from "../assets/Registrar/REGISTRAR TO PHYSICS.png"
+import RegistrarToEngrOffice from "../assets/Registrar/REGISTRAR TO ENGINEERING.png"
+import RegistrarToElectronicLab from "../assets/Registrar/REGISTRAR TO ELECTRONIC.png"
+import RegistrarToIK203 from "../assets/Registrar/REGISTRAR TO IK203.png"
+import RegistrarToIK204 from "../assets/Registrar/REGISTRAR TO IK204.png"
+import RegistrarToEducDept from "../assets/Registrar/REGISTRAR TO EDUC.png"
+import RegistrarToMathAndScience from "../assets/Registrar/REGISTRAR TO MATHSCIE.png"
+import RegistrarToIK303 from "../assets/Registrar/REGISTRAR TO IK303.png"
+import RegistrarToIK304 from "../assets/Registrar/BLANK.png"
+import RegistrarToEntrepDept from "../assets/Registrar/REGISTRAR TO ENTREP.png"
+import RegistrarToIK403 from "../assets/Registrar/REGISTRAR TO IK403.png"
+import RegistrarToIK404 from "../assets/Registrar/REGISTRAR TO IK404.png"
+import RegistrarToEngrDept from "../assets/Registrar/REGISTRAR TO COE.png"
+import RegistrarToEngrLounge from "../assets/Registrar/REGISTRAR TO LOUNGE.png"
+import RegistrarToIK503 from "../assets/Registrar/REGISTRAR TO IK503.png"
+import RegistrarToIK504 from "../assets/Registrar/REGISTRAR TO IK504.png"
+import RegistrarToCCS from "../assets/Registrar/REGISTRAR TO CCS.png"
+import RegistrarToITSO from "../assets/Registrar/REGISTRAR TO ITSO.png"
+import RegistrarToIK603 from "../assets/Registrar/REGISTRAR TO IK603.png"
+import RegistrarToIK604 from "../assets/Registrar/REGISTRAR TO IK604.png"
 
-// CHED BUILDING
-import libraryToAccountingChed from "../assets/Library/(LIBRARY) TO (C-Accounting Unit).png"
-import libraryToCashier from "../assets/Library/(LIBRARY) TO (C-Cashier).png"
-import libraryToExecutive from "../assets/Library/(LIBRARY) TO (C-Executive Office).png"
-import libraryToRecords from "../assets/Library/(LIBRARY) TO (C-Records Unit).png"
-import libraryToScholarship from "../assets/Library/(LIBRARY) TO (C-Scholarship Unit).png"
+import RegistrarToGym from "../assets/Registrar/REGISTRAR TO GYM.png"
+import RegistrarToIA104c from "../assets/Registrar/REGISTRAR TO IA104C.png"
+import RegistrarToIA105 from "../assets/Registrar/REGISTRAR TO IA105.png"
+import RegistrarToIA106b from "../assets/Registrar/REGISTRAR TO IA106b.png"
+import RegistrarToIA107b from "../assets/Registrar/REGISTRAR TO IA107b.png"
+import RegistrarToInnopad from "../assets/Registrar/REGISTRAR TO INNOPAD.png"
+import RegistrarToMotorpool from "../assets/Registrar/REGISTRAR TO MOTORPOOL.png"
+import RegistrarToPFGSD from "../assets/Registrar/REGISTRAR TO ICTO PFGSD IA203.png"
+import RegistrarToQACIMDO from "../assets/Registrar/REGISTRAR TO ICTO QACIMDO IA210.png"
+import RegistrarToSASD from "../assets/Registrar/REGISTRAR TO ICTO SASD IA207.png"
+import RegistrarToSPARD from "../assets/Registrar/REGISTRAR TO ICTO SPARD IA206.png"
+import RegistrarToICTO208 from "../assets/Registrar/REGISTRAR TO ICTO208.png"
+import RegistrarToIA202 from "../assets/Registrar/REGISTRAR TO IA202.png"
+import RegistrarToIA204 from "../assets/Registrar/REGISTRAR TO IA204.png"
 
-// BAUTISTA BUILDING
-import libraryToCanteen from "../assets/Library/(LIBRARY) TO (B-Canteen).png"
-import libraryToCoop from "../assets/Library/(LIBRARY) TO (B-Coop).png"
-import libraryToAccountancyDept from "../assets/Library/(LIBRARY) TO (B-Accountancy Department).png"
-import libraryToChemLab from "../assets/Library/(LIBRARY) TO (B-Chemistry Lab).png"
-import libraryToPhysicsLab from "../assets/Library/(LIBRARY) TO (B-Physics Lab).png"
-import libraryToEngrOffice from "../assets/Library/(LIBRARY) TO (B-Engineering Lab Office).png"
-import libraryToElectronicLab from "../assets/Library/(LIBRARY) TO (B-Electronic Lab).png"
-import libraryToEducDept from "../assets/Library/(LIBRARY) TO (B-College of Education).png"
-import libraryToMathAndScience from "../assets/Library/(LIBRARY) TO (B-Math & Science Department).png"
-import libraryToEntrepDept from "../assets/Library/(LIBRARY) TO (B-Entrepreneurship Department).png"
-import libraryToEngrDept from "../assets/Library/(LIBRARY) TO (B-College of Engineering).png"
-import libraryToEngrLounge from "../assets/Library/(LIBRARY) TO (B-Engineering Lounge).png"
-import libraryToCCS from "../assets/Library/(LIBRARY) TO (B-College of Computer Studies).png"
-import libraryToITSO from "../assets/Library/(LIBRARY) TO (B-ITSO).png"
-
-// TECHVOC
-import libraryToGym from "../assets/Library/(LIBRARY) TO (IA-QCU Gym).png"
-import libraryToInnopad from "../assets/Library/(LIBRARY) TO (IA-QCU Innopad).png"
-import libraryToMotorpool from "../assets/Library/(LIBRARY) TO (IA-Motorpool Unit Office).png"
-import libraryToIA203 from "../assets/Library/(LIBRARY) TO (IA203-PFGSD).png"
-import libraryToIA206 from "../assets/Library/(LIBRARY) TO (IA206-SPARDS).png"
-import libraryToIA207 from "../assets/Library/(LIBRARY) TO (IA207-SASD).png"
-import libraryToIA208 from "../assets/Library/(LIBRARY) TO (IA208-ICTO).png"
-import libraryToIA209 from "../assets/Library/(LIBRARY) TO (IA209-ICTO).png"
-import libraryToIA210 from "../assets/Library/(LIBRARY) TO (IA210-QACIMDO).png"
-
-// ACADEMIC BUILDING
-// LAGYAN NA LANG
+import RegistrarToGuidance from "../assets/Registrar/AdminRegistrarfloortoAcadGuidance.png"
+import RegistrarToClinic from "../assets/Registrar/AdminRegistrarfloortoAcadClinic.png"
+import RegistrarToLibrary from "../assets/Registrar/AdminRegistrarfloortoAcadLibrary.png"
+import { library } from "ionicons/icons"
 
 const Registrar = {
-    // ADMIN BUILDING
-    Admin_Lobby: {image: libraryToLobby, floorLevel: "1", buildingName: "Admin", roomName: "Admin Lobby"},
-    Accounting_Division: {image: libraryToAccounting, floorLevel: "2", buildingName: "Admin", roomName: "Accounting Division"},
-    Admission_Office: {image: libraryToAdmission, floorLevel: "2", buildingName: "Admin", roomName: "Admission Office"},
-    Registrar_Office: {image: libraryToRegistrar, floorLevel: "2", buildingName: "Admin", roomName: "Registrar Office"},
-    HR_Office: {image: libraryToHR, floorLevel: "2", buildingName: "Admin", roomName: "HR Office"},
-    // ADMIN BUILDING
+    Registrar: {
+        // Bautista Room
+        Canteen: {image: RegistrarToCanteen, floorLevel: "Basement", buildingName: "Bautista"},
+        Coop: {image: RegistrarToCoop, floorLevel: "Basement", buildingName: "Bautista"},
+        Accountancy_Department: {image: RegistrarToAccountancyDept, floorLevel: "Ground Floor", buildingName: "Bautista"},
+        Chemistry_Laboratory: {image: RegistrarToChemLab, floorLevel: "Ground Floor", buildingName: "Bautista"},
+        Physics_Laboratory: {image: RegistrarToPhysicsLab, floorLevel: "Ground Floor", buildingName: "Bautista"},
+        Engineering_Lab_Office: {image: RegistrarToEngrOffice, floorLevel: "2", buildingName: "Bautista"},
+        Electronic_Lab: {image: RegistrarToElectronicLab, floorLevel: "2", buildingName: "Bautista"},
+        IK203: {image: RegistrarToIK203, floorLevel: "2", buildingName: "Bautista"},
+        IK204: {image: RegistrarToIK204, floorLevel: "2", buildingName: "Bautista"},
+        College_of_Education: {image: RegistrarToEducDept, floorLevel: "3", buildingName: "Bautista"},
+        Math_and_Science_Department: {image: RegistrarToMathAndScience, floorLevel: "3", buildingName: "Bautista"},
+        IK303: {image: RegistrarToIK303, floorLevel: "3", buildingName: "Bautista"},
+        IK304: {image: RegistrarToIK304, floorLevel: "3", buildingName: "Bautista"},
+        Entrepreneurship_Department: {image: RegistrarToEntrepDept, floorLevel: "4", buildingName: "Bautista"},
+        IK403: {image: RegistrarToIK403, floorLevel: "4", buildingName: "Bautista"},
+        IK404: {image: RegistrarToIK404, floorLevel: "4", buildingName: "Bautista"},
+        College_of_Enginering: {image: RegistrarToEngrDept, floorLevel: "5", buildingName: "Bautista"},
+        Engineering_Lounge: {image: RegistrarToEngrLounge, floorLevel: "5", buildingName: "Bautista"},
+        IK503: {image: RegistrarToIK503, floorLevel: "5", buildingName: "Bautista"},
+        IK504: {image: RegistrarToIK504, floorLevel: "5", buildingName: "Bautista"},
+        College_of_Computer_Studies: {image: RegistrarToCCS, floorLevel: "6", buildingName: "Bautista"},
+        Innovation_and_Technology_Support_Office: {image: RegistrarToITSO, floorLevel: "6", buildingName: "Bautista"},
+        IK603: {image: RegistrarToIK603, floorLevel: "6", buildingName: "Bautista"},
+        IK604: {image: RegistrarToIK604, floorLevel: "6", buildingName: "Bautista"},
 
-    // CHED
-    Accounting_Unit: {image: libraryToAccountingChed, floorLevel: "1", buildingName: "CHED", roomName: "Accounting Unit"},
-    Cashier: {image: libraryToCashier, floorLevel: "1", buildingName: "CHED", roomName: "Cashier"},
-    Executive_Office: {image: libraryToExecutive, floorLevel: "1", buildingName: "CHED", roomName: "Executive Office"},
-    Records_Unit: {image: libraryToRecords, floorLevel: "1", buildingName: "CHED", roomName: "Records Unit"},
-    Scholarship_Unit: {image: libraryToScholarship, floorLevel: "1", buildingName: "CHED", roomName: "Scholarship Unit"},
-    // CHED
+        // TECH-VOC ROOM
+        QCU_Gym: {image: RegistrarToGym, floorLevel: "1", buildingName: "Techvoc"},
+        IA104c: {image: RegistrarToIA104c, floorLevel: "1", buildingName: "Techvoc"},
+        IA105: {image: RegistrarToIA105, floorLevel: "1", buildingName: "Techvoc"},
+        IA106b: {image: RegistrarToIA106b, floorLevel: "1", buildingName: "Techvoc"},
+        IA107b: {image: RegistrarToIA107b, floorLevel: "1", buildingName: "Techvoc"},
+        QCU_Innopad: {image: RegistrarToInnopad, floorLevel: "1", buildingName: "Techvoc"},
+        Motorpool_Unit_Office: {image: RegistrarToMotorpool, floorLevel: "1", buildingName: "Techvoc"},
+        PFGSD_IA203: {image: RegistrarToPFGSD, floorLevel: "2", buildingName: "Techvoc"},
+        QACIMDO_210: {image: RegistrarToQACIMDO, floorLevel: "2", buildingName: "Techvoc"},
+        SASD_IA207: {image: RegistrarToSASD, floorLevel: "2", buildingName: "Techvoc"},
+        SPARD_IA206: {image: RegistrarToSPARD, floorLevel: "2", buildingName: "Techvoc"},
+        ICTO208: {image: RegistrarToICTO208, floorLevel: "2", buildingName: "Techvoc"},
+        IA202: {image: RegistrarToIA202, floorLevel: "2", buildingName: "Techvoc"},
+        IA204: {image: RegistrarToIA204, floorLevel: "2", buildingName: "Techvoc"},
 
-    // BAUTISTA BUILDING
-    Canteen: {image: libraryToCanteen, floorLevel: "Basement", buildingName: "Bautista", roomName: "Canteen"},
-    Coop: {image: libraryToCoop, floorLevel: "Basement", buildingName: "Bautista", roomName: "Coop"},
-    Accountancy_Department: {image: libraryToAccountancyDept, floorLevel: "Ground Floor", buildingName: "Bautista", roomName: "Accountancy Department"},
-    Chemistry_Laboratory: {image: libraryToChemLab, floorLevel: "Ground Floor", buildingName: "Bautista", roomName: "Chemistry Laboratory"},
-    Physics_Laboratory: {image: libraryToPhysicsLab, floorLevel: "Ground Floor", buildingName: "Bautista", roomName: "Physics Laboratory"},
-    Engineering_Lab_Office: {image: libraryToEngrOffice, floorLevel: "2", buildingName: "Bautista", roomName: "Engineering Lab Office"},
-    Electronic_Lab: {image: libraryToElectronicLab, floorLevel: "2", buildingName: "Bautista", roomName: "Electronic Lab"},
-    College_of_Education: {image: libraryToEducDept, floorLevel: "3", buildingName: "Bautista", roomName: "College of Education"},
-    Math_and_Science_Department: {image: libraryToMathAndScience, floorLevel: "3", buildingName: "Bautista", roomName: "Math and Science Department"},
-    Entrepreneurship_Department: {image: libraryToEntrepDept, floorLevel: "4", buildingName: "Bautista", roomName: "Entrepreneurship Department"},
-    College_of_Enginering: {image: libraryToEngrDept, floorLevel: "5", buildingName: "Bautista", roomName: "College of Engineering"},
-    Engineering_Lounge: {image: libraryToEngrLounge, floorLevel: "5", buildingName: "Bautista", roomName: "Engineering Lounge"},
-    College_of_Computer_Studies: {image: libraryToCCS, floorLevel: "6", buildingName: "Bautista", roomName: "College of Computer Studies"},
-    Innovation_and_Technology_Support_Office: {image: libraryToITSO, floorLevel: "6", buildingName: "Bautista", roomName: "Innovation and Technology Support Office"},
-    // BAUTISTA BUILDING
+        // Academic Room
+        Guidance: {image: RegistrarToGuidance, floorLevel: "1", buildingName: "Academic"},
+        Clinic: {image: RegistrarToClinic, floorLevel: "1", buildingName: "Academic"},
+        Library: {image: RegistrarToLibrary, floorLevel: "1", buildingName: "Academic"},
+    }
+}
 
-    // TECHVOC BUILDING
-    QCU_Gym: {image: libraryToGym, floorLevel: "1", buildingName: "Techvoc", roomName: "QCU Gym"},
-    QCU_Innopad: {image: libraryToInnopad, floorLevel: "1", buildingName: "Techvoc", roomName: "QCU Innopad"},
-    Motorpool_Unit_Office: {image: libraryToMotorpool, floorLevel: "1", buildingName: "Techvoc", roomName: "Motorpool Unit Office"},
-
-    IA203_PFGSD: {image: libraryToIA203, floorLevel: "2", buildingName: "Techvoc", roomName: "PFGSD - IA203"},
-    IA206_SPARDS: {image: libraryToIA206, floorLevel: "2", buildingName: "Techvoc", roomName: "SPARDS - IA206"},
-    IA207_SASD: {image: libraryToIA207, floorLevel: "2", buildingName: "Techvoc", roomName: "SASD - IA207"},
-    IA208_ICTO: {image: libraryToIA208, floorLevel: "2", buildingName: "Techvoc", roomName: "ICTO - IA208"},
-    IA209_ICTO: {image: libraryToIA209, floorLevel: "2", buildingName: "Techvoc", roomName: "ICTO - IA209"},
-    IA210_QACIMDO: {image: libraryToIA210, floorLevel: "2", buildingName: "Techvoc", roomName: "QACIMDO - IA210"},
-    // TECHVOC BUILDING
-
-    // ACADEMIC BUILDING
-
-
-    // ACADEMIC BUILDING
-};
-
-export default Registrar;
