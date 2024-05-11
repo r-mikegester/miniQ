@@ -33,15 +33,15 @@ const WelcomeComponent = () => {
     );
 
     useEffect(() => {
-      const fetchRoomData = async () => {
-          // Dynamically import roomData based on qrValue
-          const roomDataModule = await import(`../data/${qrValue}`);
-          console.log(roomDataModule.default);
-          setDestinationData(roomDataModule.default);
-          setFilteredData(roomDataModule.default);
-      };
-      fetchRoomData();
-  }, [qrValue]);
+        const fetchRoomData = async () => {
+            // Dynamically import roomData based on qrValue
+            const roomDataModule = await import(`../data/${qrValue}.ts`);
+            console.log(roomDataModule.default);
+            setDestinationData(roomDataModule.default);
+            setFilteredData(roomDataModule.default);
+        };
+        fetchRoomData();
+    }, [qrValue]);
 
     useEffect(() => {
         if (destinationData) {
