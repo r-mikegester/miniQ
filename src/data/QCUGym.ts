@@ -14,7 +14,7 @@ import toLibrary from "../assets/QCUGym/QCUGym-library.png"
 // BAUTISTA BUILDING
 import toCanteen from "../assets/QCUGym/QCUGym-canteen.png"
 import toCoop from "../assets/QCUGym/QCUGym-coop.png"
-import toAccountancyDept from "../assets/QCUGym/QCUGym-accountacyDept.png"
+import toAccountancyDept from "../assets/QCUGym/QCUGym-accountancyDept.png"
 import toPhysicsLab from "../assets/QCUGym/QCUGym-physicsLab.png"
 import toChemLab from "../assets/QCUGym/QCUGym-chemLab.png"
 import toEngineeringLab from "../assets/QCUGym/QCUGym-engineeringLab.png"

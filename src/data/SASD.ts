@@ -14,7 +14,7 @@ import toLibrary from "../assets/SASD/SASD-library.png"
 // BAUTISTA BUILDING
 import toCanteen from "../assets/SASD/SASD-canteen.png"
 import toCoop from "../assets/SASD/SASD-coop.png"
-import toAccountancyDept from "../assets/SASD/SASD-accountacyDept.png"
+import toAccountancyDept from "../assets/SASD/SASD-accountancyDept.png"
 import toPhysicsLab from "../assets/SASD/SASD-physicsLab.png"
 import toChemLab from "../assets/SASD/SASD-chemLab.png"
 import toEngineeringLab from "../assets/SASD/SASD-engineeringLab.png"
