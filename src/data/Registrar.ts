@@ -41,6 +41,7 @@ import libraryToIA209 from "../assets/Library/(LIBRARY) TO (IA209-ICTO).png"
 import libraryToIA210 from "../assets/Library/(LIBRARY) TO (IA210-QACIMDO).png"
 
 // ACADEMIC BUILDING
+
 // LAGYAN NA LANG
 
 const Registrar = {
