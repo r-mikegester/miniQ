@@ -47,10 +47,21 @@ import AdminLobbyToIA204 from "../assets/Admin_Lobby/ADMIN LOBBY TO IA204.png"
 import AdminLobbyToGuidance from "../assets/Admin_Lobby/AdmissionToGuidance.png"
 import AdminLobbyToClinic from "../assets/Admin_Lobby/AdmissionToClinic.png"
 import AdminLobbyToLibrary from "../assets/Admin_Lobby/AdmissionToLibrary.png"
+
+import AdminLobbyToAccountingChed from "../assets/Admin_Lobby/REGISTRAR TO ACCOUNTING.png"
+import AdminLobbyToCashier from "../assets/Admin_Lobby/REGISTRAR TO CASHIER.png"
+import AdminLobbyToExecutive from "../assets/Admin_Lobby/REGISTRAR TO EXECUTIVE.png"
+import AdminLobbyToRecord from "../assets/Admin_Lobby/REGISTRAR TO RECORD.png"
+import AdminLobbyToScholarship from "../assets/Admin_Lobby/REGISTRAR TO SCHOLARSHIP.png"
+
+import AdminLobbyToMultipurpose from "../assets/Admin_Lobby/REGISTRAR TO MULTIPURPOSE.png"
+import AdminLobbyToBallroom from "../assets/Admin_Lobby/REGISTRAR TO BALLROOM.png"
+import AdminLobbyToUrban from "../assets/Admin_Lobby/REGISTRAR TO URBAN.png"
+import AdminLobbyToChineseB from "../assets/Admin_Lobby/REGISTRAR TO CHINESE B.png"
+
 import { library } from "ionicons/icons"
 
-const Admin_Lobby = {
-    AdminLobby: {
+const AdminLobby = {
         // Bautista Room
         Canteen: {image: AdminLobbyToCanteen, floorLevel: "Basement", buildingName: "Bautista"},
         Coop: {image: AdminLobbyToCoop, floorLevel: "Basement", buildingName: "Bautista"},
@@ -97,5 +108,23 @@ const Admin_Lobby = {
         Guidance: {image: AdminLobbyToGuidance, floorLevel: "1", buildingName: "Academic"},
         Clinic: {image: AdminLobbyToClinic, floorLevel: "1", buildingName: "Academic"},
         Library: {image: AdminLobbyToLibrary, floorLevel: "1", buildingName: "Academic"},
-    }
+
+        // Ched
+        Accounting_Ched: {image: AdminLobbyToAccountingChed, floorLevel: "1", buildingName: "Ched"},
+        Cashier_Ched: {image: AdminLobbyToCashier, floorLevel: "1", buildingName: "Ched"},
+        Executice_Ched: {image: AdminLobbyToExecutive, floorLevel: "1", buildingName: "Ched"},
+        Record_Ched: {image: AdminLobbyToRecord, floorLevel: "1", buildingName: "Ched"},
+        Scholarship_Ched: {image: AdminLobbyToScholarship, floorLevel: "1", buildingName: "Ched"},
+
+        // Urban
+        Urban: {image: AdminLobbyToUrban, floorLevel: "1", buildingName: "Urban"},
+
+        // Multipurpose
+        Multipurpose: {image: AdminLobbyToMultipurpose, floorLevel: "1", buildingName: "Multipurpose"},
+
+        // Ballroom
+        Ballroom: {image: AdminLobbyToBallroom, floorLevel: "1", buildingName: "Ballroom"},
+
+        // Chinese B
+        Chinese_B: {image: AdminLobbyToChineseB, floorLevel: "1", buildingName: "Chinese B"},
 }
