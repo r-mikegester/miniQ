@@ -7,6 +7,7 @@ interface RoomDetails {
     image: string;
     floorLevel: string;
     buildingName: string;
+    roomName: string;
 }
 
 type DestinationData = {
@@ -35,11 +36,7 @@ const WelcomeComponent = () => {
     useEffect(() => {
         const fetchRoomData = async () => {
             // Dynamically import roomData based on qrValue
-<<<<<<< Updated upstream
             const roomDataModule = await import(`../data/${qrValue}.ts`);
-=======
-            const roomDataModule = await import(`../data/${qrValue}`);
->>>>>>> Stashed changes
             console.log(roomDataModule.default);
             setDestinationData(roomDataModule.default);
             setFilteredData(roomDataModule.default);
@@ -145,7 +142,7 @@ const WelcomeComponent = () => {
                                                             className="h-full py-3 bg-base-300 rounded-2xl btn-block btn"
                                                         >
                                                             <div className="flex justify-between w-full h-auto space-x-3">
-                                                                <div className="text-lg font-semibold text-left uppercase truncate w-72 text-wrap text-ellipsis">{destination}</div>
+                                                                <div className="text-lg font-semibold text-left uppercase truncate w-72 text-wrap text-ellipsis">{details.roomName}</div>
                                                                 <div className="flex flex-col items-end space-y-2 text-right">
                                                                     <div> floor: {details.floorLevel}</div>
                                                                     <div className="badge badge-lg bg-emerald-500 text-base-300">{details.buildingName}</div>
