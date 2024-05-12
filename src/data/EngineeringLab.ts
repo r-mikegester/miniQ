@@ -1,35 +1,36 @@
 
 // ADMIN BUILDING
-import libraryToLobby from "../assets/PhysicsLab/(LIBRARY) TO (A-Admin Lobby).png"
-import libraryToAccounting from "../assets/PhysicsLab/(LIBRARY) TO (A-Accounting Division).png"
-import libraryToAdmission from "../assets/PhysicsLab/(LIBRARY) TO (A-Admission Office).png"
-import libraryToRegistrar from "../assets/PhysicsLab/(LIBRARY) TO (A-Registrar Office).png"
-import libraryToHR from "../assets/PhysicsLab/(LIBRARY) TO (A-HR Office).png"
+import libraryToLobby from "../assets/Engineering/(LIBRARY) TO (A-Admin Lobby).png"
+import libraryToAccounting from "../assets/Engineering/(LIBRARY) TO (A-Accounting Division).png"
+import libraryToAdmission from "../assets/Engineering/(LIBRARY) TO (A-Admission Office).png"
+import libraryToRegistrar from "../assets/Engineering/(LIBRARY) TO (A-Registrar Office).png"
+import libraryToHR from "../assets/Engineering/(LIBRARY) TO (A-HR Office).png"
 
 // CHED BUILDING
-import libraryToCashier from "../assets/PhysicsLab/(LIBRARY) TO (C-Cashier).png"
-import libraryToExecutive from "../assets/PhysicsLab/(LIBRARY) TO (C-Executive Office).png"
-import libraryToScholarship from "../assets/PhysicsLab/(LIBRARY) TO (C-Scholarship Unit).png"
+import libraryToCashier from "../assets/Engineering/(LIBRARY) TO (C-Cashier).png"
+import libraryToExecutive from "../assets/Engineering/(LIBRARY) TO (C-Executive Office).png"
+import libraryToScholarship from "../assets/Engineering/(LIBRARY) TO (C-Scholarship Unit).png"
 
 // TECHVOC
-import libraryToGym from "../assets/PhysicsLab/(LIBRARY) TO (IA-QCU Gym).png"
-import libraryToInnopad from "../assets/PhysicsLab/(LIBRARY) TO (IA-QCU Innopad).png"
-import libraryToMotorpool from "../assets/PhysicsLab/(LIBRARY) TO (IA-Motorpool Unit Office).png"
-import libraryToIA203 from "../assets/PhysicsLab/(LIBRARY) TO (IA203-PFGSD).png"
-import libraryToIA206 from "../assets/PhysicsLab/(LIBRARY) TO (IA206-SPARDS).png"
-import libraryToIA207 from "../assets/PhysicsLab/(LIBRARY) TO (IA207-SASD).png"
-import libraryToIA208 from "../assets/PhysicsLab/(LIBRARY) TO (IA208-ICTO).png"
-import libraryToIA209 from "../assets/PhysicsLab/(LIBRARY) TO (IA209-ICTO).png"
-import libraryToIA210 from "../assets/PhysicsLab/(LIBRARY) TO (IA210-QACIMDO).png"
+import libraryToGym from "../assets/Engineering/(LIBRARY) TO (IA-QCU Gym).png"
+import libraryToInnopad from "../assets/Engineering/(LIBRARY) TO (IA-QCU Innopad).png"
+import libraryToMotorpool from "../assets/Engineering/(LIBRARY) TO (IA-Motorpool Unit Office).png"
+import libraryToIA203 from "../assets/Engineering/(LIBRARY) TO (IA203-PFGSD).png"
+import libraryToIA206 from "../assets/Engineering/(LIBRARY) TO (IA206-SPARDS).png"
+import libraryToIA207 from "../assets/Engineering/(LIBRARY) TO (IA207-SASD).png"
+import libraryToIA208 from "../assets/Engineering/(LIBRARY) TO (IA208-ICTO).png"
+import libraryToIA209 from "../assets/Engineering/(LIBRARY) TO (IA209-ICTO).png"
+import libraryToIA210 from "../assets/Engineering/(LIBRARY) TO (IA210-QACIMDO).png"
 
 // ACADEMIC BUILDING
-import AccountancyToClinic from "../assets/PhysicsLab/(AccountancyDept) TO (Clinic).png"
-import AccountancyToLibrary from "../assets/PhysicsLab/(AccountancyDept) TO (Library).png"
-import AccountancyToCPCE from "../assets/PhysicsLab/(AccountancyDept) TO (CPCE).png"
+import AccountancyToClinic from "../assets/Engineering/(AccountancyDept) TO (Clinic).png"
+import AccountancyToLibrary from "../assets/Engineering/(AccountancyDept) TO (Library).png"
+import AccountancyToCPCE from "../assets/Engineering/(AccountancyDept) TO (CPCE).png"
 // ACADEMIC BUILDING
 
 
-const PhysicsLab = {
+const EngineeringLab = {
+
     // ADMIN BUILDING
     Admin_Lobby: {image: libraryToLobby, floorLevel: "1", buildingName: "Admin", roomName: "Admin Lobby"},
     Accounting_Division: {image: libraryToAccounting, floorLevel: "2", buildingName: "Admin", roomName: "Accounting Division"},
@@ -37,6 +38,7 @@ const PhysicsLab = {
     Registrar_Office: {image: libraryToRegistrar, floorLevel: "2", buildingName: "Admin", roomName: "Registrar Office"},
     HR_Office: {image: libraryToHR, floorLevel: "2", buildingName: "Admin", roomName: "HR Office"},
     // ADMIN BUILDING
+
 
     // CHED
     Cashier: {image: libraryToCashier, floorLevel: "1", buildingName: "CHED", roomName: "Cashier"},
@@ -58,11 +60,13 @@ const PhysicsLab = {
     IA210_QACIMDO: {image: libraryToIA210, floorLevel: "2", buildingName: "Techvoc", roomName: "QACIMDO - IA210"},
     // TECHVOC BUILDING
 
+
     // ACADEMIC BUILDING
     Clinic: {image: AccountancyToClinic, floorLevel: "1", buildingName: "Academic", roomName: "Medical and Dental Clinic"},
     CPCE: {image: AccountancyToCPCE, floorLevel: "1", buildingName: "Academic", roomName: "Center for Preofessional and Continuing Education"},
     Library: {image: AccountancyToLibrary, floorLevel: "1", buildingName: "Academic", roomName: "Library"},
     // ACADEMIC BUILDING 
+    
 };
 
-export default PhysicsLab;
+export default EngineeringLab;
