@@ -29,7 +29,7 @@ import libraryToIA210 from "../assets/AccountancyDept/(AccDept) TO (IA210-QACIMD
 
 const AccountancyDept = {
     // ADMIN BUILDING
-    Admin_Lobby: {image: libraryToLobby, floorLevel: "1", buildingName: "Admin", roomName: "Admin Lobby"},
+   // Admin_Lobby: {image: libraryToLobby, floorLevel: "1", buildingName: "Admin", roomName: "Admin Lobby"},
     Accounting_Division: {image: libraryToAccounting, floorLevel: "2", buildingName: "Admin", roomName: "Accounting Division"},
     HR_Office: {image: libraryToHR, floorLevel: "2", buildingName: "Admin", roomName: "HR Office"},
 
