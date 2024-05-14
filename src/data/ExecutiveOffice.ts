@@ -18,10 +18,13 @@ import RecordsUnitToEducDept from "../assets/ExecutiveOffice/EDUC DEPT.png"
 import RecordsUnitToEngineeringLab from "../assets/ExecutiveOffice/ENGINEERING LAB.png"
 import RecordsUnitElectronicLab from "../assets/ExecutiveOffice/ELECTRICAL LAB.png"
 import RecordsUnitToCCS from "../assets/ExecutiveOffice/CCS.png"
+import RecordsUnitToEngineeringLounge from "../assets/ExecutiveOffice/ENGINEERINGLOUNGE.png"
+import RecordsUnitToITSO from "../assets/ExecutiveOffice/ITSO.png"
 
 // ACADEMIC
 import RecordsUnitToClinic from "../assets/ExecutiveOffice/Clinic.png"
 import RecordsUnitToCPCE from "../assets/ExecutiveOffice/CPCE.png"
+import RecordsUnitToLibrary from "../assets/AccountingUnit/Library.png"
 
 // TECHVOC
 import RecordsUnitToGym from "../assets/ExecutiveOffice/Gym.png"
@@ -42,26 +45,29 @@ const ExecutiveOffice = {
     OpenLobby: {image: executiveOfficeToOpenLobby, floorLevel: "1", buildingName: "Admin", roomName: "Open Lobby"},
     Registrar: {image: executiveOfficeToRegistrar, floorLevel: "2", buildingName: "Admin", roomName: "Registrar"},
     // ADMIN BUILDING
-
     
     // BAUTISTA
+    Canteen: {image: RecordsUnitToCanteen, floorLevel: "UG", buildingName: "Bautista", roomName: "Canteen"},
     Chemistry: {image: RecordsUnitToChemistryLab, floorLevel: "1", buildingName: "Bautista", roomName: "Chemistry Lab"},
     Physics: {image: RecordsUnitToPhysics, floorLevel: "1", buildingName: "Bautista", roomName: "Physics Lab"},
-    Canteen: {image: RecordsUnitToCanteen, floorLevel: "UG", buildingName: "Bautista", roomName: "Canteen"},
+    ChemistryLab: {image: RecordsUnitToChemistryLab, floorLevel: "1", buildingName: "Bautista", roomName: "Chemistry Lab"},
     AccountingDept: {image: RecordsUnitToAccountingDept, floorLevel: "1", buildingName: "Bautista", roomName: "Accounting Department"},
-    EngineeringDept: {image: RecordsUnitToEngineeringDept, floorLevel: "3", buildingName: "Bautista", roomName: "Engineering Department"},
-    EntrepDept: {image: RecordsUnitToEntrepDept, floorLevel: "UG", buildingName: "Bautista", roomName: "Enteprenuership Department"},
-    MathScience: {image: RecordsUnitMathScience, floorLevel: "4", buildingName: "Bautista", roomName: "Math and Science Lab"},
+    EngineeringLab: {image: RecordsUnitToEngineeringLab, floorLevel: "2", buildingName: "Bautista", roomName: "Engineering Lab"},
+    ElectronicLab: {image: RecordsUnitElectronicLab, floorLevel: "2", buildingName: "Bautista", roomName: "Electronics and Electrical Lab"},
+    MathScience: {image: RecordsUnitMathScience, floorLevel: "3", buildingName: "Bautista", roomName: "Math and Science Lab"},
     EducDept: {image: RecordsUnitToEducDept, floorLevel: "3", buildingName: "Bautista", roomName: "Education Department"},
-    EngineeringLab: {image: RecordsUnitToEngineeringLab, floorLevel: "3", buildingName: "Bautista", roomName: "Engineering Lab"},
-    ElectronicLab: {image: RecordsUnitElectronicLab, floorLevel: "4", buildingName: "Bautista", roomName: "Electronics and Electrical Lab"},
-    ChemistryLab: {image: RecordsUnitToChemistryLab, floorLevel: "4", buildingName: "Bautista", roomName: "Chemistry Lab"},
+    EntrepDept: {image: RecordsUnitToEntrepDept, floorLevel: "4", buildingName: "Bautista", roomName: "Enteprenuership Department"},
+    EngineeringDept: {image: RecordsUnitToEngineeringDept, floorLevel: "5", buildingName: "Bautista", roomName: "Engineering Department"},
+    EngineeringLounge: {image: RecordsUnitToEngineeringLounge, floorLevel: "5", buildingName: "Bautista", roomName: "Engineering Student Lounge"},
     CCS: {image: RecordsUnitToCCS, floorLevel: "6", buildingName: "Bautista", roomName: "CCS"},
+   // ITSO: {image: RecordsUnitToITSO, floorLevel: "6", buildingName: "Bautista", roomName: "ITSO"}, 
     // BAUTISTA
 
     // ACADEMIC
     Clinic: {image: RecordsUnitToClinic, floorLevel: "1", buildingName: "Academic", roomName: "Clinic"},
     CPCE: {image: RecordsUnitToCPCE, floorLevel: "1", buildingName: "Academic", roomName: "Clinic"},
+    Library: {image: RecordsUnitToLibrary, floorLevel: "2", buildingName: "Academic", roomName: "Library"},
+
 
     // TECHVOC
     QCU_Gym: {image: RecordsUnitToGym, floorLevel: "1", buildingName: "Techvoc", roomName: "QCU Gym"},
